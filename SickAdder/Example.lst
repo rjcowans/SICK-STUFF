@@ -1,0 +1,22 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Sat Dec  1 15:06:19 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   EXAMPLE START 	100
+002- 00100 1B000C            	ADD	12	.LOAD 12 INTRO REGISRWE A
+003- 00103 19000C            	ADD	#12	.ADD 12 TO REGISTER A
+004- 00106 0F2003            	STA	SAVA	.STORE A IN MEMORY
+005- 00109 4F0000            	RSUB		.RETURN
+006- 0010C                   SAVA	RESW	1	.RESERVERED WORD FOR THE VARAIABE
+007- 0010F 000005            CAKE	WORD	5
+008- 00112 00000A            	WORD	10
+009- 00115 00000F            	WORD	15
+010- 00118 000014            	WORD	20
+011- 0011B 000050            	WORD	80
+012- 0011E 1A000C            	ADD	@12	
+013- 00121                   	END	EXAMPLE

@@ -1,0 +1,13 @@
+Example START 	100
+	ADD	12	.Load 12 intro Regisrwe A
+	ADD	#12	.Add 12 to Register a
+	STA	SAVA	.Store A in Memory
+	RSUB		.Return
+SAVA	RESW	1	.Reservered word for the varaiabe
+CAKE	WORD	5
+	WORD	10
+	WORD	15
+	WORD	20
+	WORD	80
+	ADD	@12	
+	END	EXAMPLE

@@ -1,0 +1,19 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Tue Nov 13 18:53:46 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   COOK	START	100
+002- 00100 000014            VAR3	WORD	20
+003- 00103 0320BD            	LDA	VAR
+004- 00106 0620BA            	LDX	@VAR
+005- 00109                   CAKE	RESW	30
+006- 00163 6D205D            	LDS	#VAR
+007- 00166 772F97            	LDT	VAR3
+008- 00169                   FOO	RESW	30
+009- 001C3 000005            VAR	WORD	5
+010- 001C6                   	END	COOK

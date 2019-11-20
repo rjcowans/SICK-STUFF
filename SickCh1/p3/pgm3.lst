@@ -1,0 +1,17 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Tue Sep 11 19:31:31 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00300                   PGM3	START	300
+002- 00300 00030C            	*LDA	BETA
+003- 00303 24030F            	*DIV	GAMMA
+004- 00306 0C0309            	*STA	APL
+005- 00309                   APL	*RESW	1
+006- 0030C 00000A            BETA	*WORD	10
+007- 0030F 000002            GAMMA	*WORD	2
+008- 00312                   	END	PGM3

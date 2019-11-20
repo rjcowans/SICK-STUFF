@@ -1,0 +1,9 @@
+PGM	START	100	
+	LDA	BETA	.loading a into the register
+	LDS	GAMMA	.loading beta into the regisiter
+	MULR	A,S	.multiplying register
+	STS	ALP	.storing into A
+ALP	RESW	1
+BETA	WORD	5
+GAMMA	WORD	2
+	END	PGM	

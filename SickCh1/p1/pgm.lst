@@ -1,0 +1,18 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Tue Sep 11 18:09:16 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   PGM	START	100	
+002- 00100 03200B            	LDA	BETA	.LOADING A INTO THE REGISTER
+003- 00103 6F200B            	LDS	GAMMA	.LOADING BETA INTO THE REGISITER
+004- 00106 9804              	MULR	A,S	.MULTIPLYING REGISTER
+005- 00108 7F2000            	STS	ALP	.STORING INTO A
+006- 0010B                   ALP	RESW	1
+007- 0010E 000005            BETA	WORD	5
+008- 00111 000002            GAMMA	WORD	2
+009- 00114                   	END	PGM	

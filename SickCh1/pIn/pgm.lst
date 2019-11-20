@@ -1,0 +1,22 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Wed Sep 19 21:34:08 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   PGM	START	100
+002- 00100 E32015            INLOOP	TD	INDEV
+003- 00103 332FFA            	JEQ	INLOOP
+004- 00106 DB200F            	RD	INDEV
+005- 00109 57200E            	STCH	DATA
+006- 0010C E3200A            OUTLP	TD	OUTDEV
+007- 0010F 332FFA            	JEQ	OUTLP
+008- 00112 532005            	LDCH	DATA
+009- 00115 DF2001            	WD	OUTDEV
+010- 00118 F2                INDEV	BYTE	X'F2'
+011- 00119 05                OUTDEV	BYTE	X'05'
+012- 0011A                   DATA	RESB	1
+013- 0011B                   	END	PGM

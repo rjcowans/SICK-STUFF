@@ -1,0 +1,71 @@
+SIC SIMULATOR V1.6
+File names are:
+loader                                 
+DEVF1                                  
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+r
+loader                                 
+DEVF1                                  
+pgm3.obj
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+File names are:
+loader                                 
+pgm3.obj                               
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+a
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+s
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+b 312
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=000065
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+BREAKPOINT REACHED
+P=000312
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 300-312
+
+0300 00030C24 030F0C03 09000005 00000A00
+0310 0002FFFF FFFFFFFF FFFFFFFF FFFFFFFF
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 300-306
+
+0300 00030C24 030F0C03 09000005 00000A00
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 300-310
+
+0300 00030C24 030F0C03 09000005 00000A00
+0310 0002FFFF FFFFFFFF FFFFFFFF FFFFFFFF
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 300-312
+
+0300 00030C24 030F0C03 09000005 00000A00
+0310 0002FFFF FFFFFFFF FFFFFFFF FFFFFFFF
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+q

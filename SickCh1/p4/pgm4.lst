@@ -1,0 +1,32 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Mon Dec  3 00:21:55 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   ADDRES	START	100
+002-                         . tests pc forward addressing
+003-                         . tests base addressing
+004-                         . tests pc backward addressing
+005- 00100                   NOW	+LDB	#BEGIN              LOAD BASE REGISTER
+********** ERROR: Operand not found in symbol table [#5 on line 5]
+006- 00104                   XXX	BASE	BEGIN              TELL ASSEMBLER
+007- 00104 010019            YYY	LDA	#25                 A <- (M..M+2)
+008- 00107 030019            BBB	LDA 	25
+009- 0010A                   EN	RESW 	4
+010- 00116 9805              BOOM	MULR	A,T
+011- 00118 000002            BE	WORD	2
+012- 0011B 000003            RIP	WORD	3
+013- 0011E 000006            LOL	WORD	6
+014- 00121 FFFFF9            	WORD	-7
+015- 00124 000008            	WORD	8
+016- 00127 000009            	WORD	9
+017- 0012A                   BEGIN	RESW	1
+018- 0012D                   JUNK	RESW	1000
+019- 00CE5 034003            ZZZ	LDA	JUNK
+020- 00CE8 000005            THERE	WORD	5
+021- 00CEB 0F2FFA            MMM	STA	THERE
+022- 00CEE                   	END	NOW
