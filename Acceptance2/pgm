@@ -1,0 +1,31 @@
+PGM	START	100	.Start address
+	LDT	#3
+	LDX	#0
+	LDS	#33
+INLOOP	CLEAR	A
+	TD	INDEV
+	JEQ	INLOOP
+	RD	INDEV	
+	STA	ARRYF,X	
+	ADDR	T,X
+	COMPR	S,X
+	JGT	INLOOP
+INX     WORD    33
+INY     WORD    0
+LOOP    LDX     INY
+        LDA     ARRYF,X
+        LDX     INX
+        STA     ARRYB,X
+        LDA     INY
+        ADD     #3
+        STA     INY
+        LDA     INX
+        SUB     #3
+        STA     INX
+        COMP    #-3
+        JGT     LOOP		
+INDEV	BYTE	X'F2'
+ARRYF	RESW	10
+ARRYB	RESW	10
+	END	PGM	
+		

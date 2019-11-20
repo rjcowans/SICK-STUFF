@@ -1,0 +1,87 @@
+SIC SIMULATOR V1.6
+File names are:
+loader                                 
+DEVF1                                  
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+r
+loader                                 
+DEVF1                                  
+pgm.obj
+DEVF2                                  
+testfile
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+File names are:
+loader                                 
+pgm.obj                                
+testfile                               
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+a
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+s
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=000068
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=00003C
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=00004B
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=000048
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+UNSUPPORTED MACHINE INSTRUCTION
+P=000148
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+UNSUPPORTED MACHINE INSTRUCTION
+P=000148
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 100-200
+
+0100 75000305 00006D00 21B400E3 203A332F
+0110 F8DB2034 0FA03290 51A04137 2FEBFFFF
+0120 FD000024 072FFA03 A01F072F F10FA037
+0130 032FEE19 00030F2F E8032FE2 1D00030F
+0140 2FDC290F FD372FDC F2[000030 00003100
+0150 00320000 33000034 00003500 00360000
+0160 37000038 000039]00 00090000 090000{39
+0170 00003800 00370000 36000035 00003400
+0180 00330000 32000031 000030}FF FFFFFFFF
+0190 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01A0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01B0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01C0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01D0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01E0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01F0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+0200 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+q

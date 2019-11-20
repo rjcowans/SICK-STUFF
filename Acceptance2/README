@@ -1,0 +1,72 @@
+								Richard Cowans
+								n01222478
+				Project2 README
+------------------------------------------
+Disclaimer: Extra Credit is Attempted for this Project
+-----------------------------------------
+
+Purpose
+----------------------------------------------------------------------------------------------
+The purpose of this project is to take in a set numbers of digits from a array and
+then reverse them. I beleive this will not only help me understand SIC/XE but the logice use
+for the actual functionality of the of the the SIC/XE instructions. I choses to implenenemt 
+the project in SIC/XE, so i could use a better case of the registers. I read in the testfile
+forward then stored it backwards in a new array. There is also the area that makes people 
+understand the addressing in the files as well as the indexing. The testfile I am using will 
+only have ten character since the read device only READS BYTE by BYTE. However, that will 
+then be converted into asci Base_10 then which is then convert to hex that I will store
+into the Array. I must make sure I change the index by three for I am storing the word which is 
+----------------------------------------------------------------------------------------------
+
+Source Files
+--------------------------------------------------------------------------------------------
+I will list the files and then their explanations
+{pgm, pgm.obj,pgm.lst,testfile,Log_updated.docx,sic.log}
+"pgm"-source file for the code that is to be assembled in the from "sicasm" command
+"pgm.obj"- object file that holds the object code for sicsim
+"pgm.lst"- gives the {address,label,instruction,operand,comments} format from the source file
+	   that was assembled through sicasm making it easier to read the source file
+"testfile"-this is the test data of 10 digits since the Read Device reads everything BYTE by
+	   BYTE
+"Log_updated.docx"- this has my sic dump with highlight keys and explanation
+"sic.log"-a log file to show the commands and sic dump i printed to my console
+---------------------------------------------------------------------------------------------
+
+Contents of "testfile"
+----------------------
+0123456789
+---------------------
+
+Output Files
+--------------------------------------------------------------------------------------------
+Refer to the Console for the Output of the dump
+--------------------------------------------------------------------------------------------
+
+Execuation
+------------------------------------------------------------------------------------------
+Theses are the commands you will need to run in order to successful run the program
+The files you should be using is 
+	Step 0: unshar Project2
+	Step 1: sicasm pgm
+		-The typical approved window of it works should pop up
+	Step 2: sicsim 
+	Step 3: press “r” 
+		-To rename the files
+	Step 4: press Enter 
+	Step 5: we rename DEVF1 to “pgm.obj” by typing "pgm.obj"
+		press "Enter"
+		Then rename DEVF2 to “testfile” by typing "testfile"
+	Step 6: press “enter” until the options windows of “a” or “r” pops up
+	Step 7:	Press  “a” to accept
+	Step 8: Press “s” to start
+	Step 9: press “r” to run until “Unsupported Machine Instruction Reached” comes
+	Step 10: then type “d 100-200”
+
+After that you will see the same type of contents for the values for the Log_updated.docx
+on location address 149 and forward 
+-------------------------------------------------------------------------------------------
+
+Final Disclaimer
+------------------------------------------------------------------------------------------
+This code is modifiable for more characters.
+-----------------------------------------------------------------------------------------

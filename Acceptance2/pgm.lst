@@ -1,0 +1,39 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n01222478; Wed Oct  3 14:15:27 2018
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   PGM	START	100	.START ADDRESS
+002- 00100 750003            	LDT	#3
+003- 00103 050000            	LDX	#0
+004- 00106 6D0021            	LDS	#33
+005- 00109 B400              INLOOP	CLEAR	A
+006- 0010B E3203A            	TD	INDEV
+007- 0010E 332FF8            	JEQ	INLOOP
+008- 00111 DB2034            	RD	INDEV	
+009- 00114 0FA032            	STA	ARRYF,X	
+010- 00117 9051              	ADDR	T,X
+011- 00119 A041              	COMPR	S,X
+012- 0011B 372FEB            	JGT	INLOOP
+013- 0011E 000021            INX     WORD    33
+014- 00121 000000            INY     WORD    0
+015- 00124 072FFA            LOOP    LDX     INY
+016- 00127 03A01F                    LDA     ARRYF,X
+017- 0012A 072FF1                    LDX     INX
+018- 0012D 0FA037                    STA     ARRYB,X
+019- 00130 032FEE                    LDA     INY
+020- 00133 190003                    ADD     #3
+021- 00136 0F2FE8                    STA     INY
+022- 00139 032FE2                    LDA     INX
+023- 0013C 1D0003                    SUB     #3
+024- 0013F 0F2FDC                    STA     INX
+025- 00142 290FFD                    COMP    #-3
+026- 00145 372FDC                    JGT     LOOP		
+027- 00148 F2                INDEV	BYTE	X'F2'
+028- 00149                   ARRYF	RESW	10
+029- 00167                   ARRYB	RESW	10
+030- 00185                   	END	PGM	
